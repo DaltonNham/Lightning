@@ -24,7 +24,7 @@ void draw()
 	y = ((int)(Math.random() * 19) + 10);
 	endY = startY + y;
 	strokeWeight(5);
-	if (startX > 150) { //lightning strike
+	if (startX > 150) { //lightning strike!
 		endX = startX - x;
 	}
 	else {
@@ -34,14 +34,14 @@ void draw()
 	line(startX,startY,endX,endY);
 	startX = endX;
 	startY = endY;
-	if (endY > 300) { //sparks
+	if (endY > 300) { //sparks!
 		fill(yellow,yellow,50,100);
 		stroke(yellow,yellow,50,100);
 		ellipse(endX,endY,50,50);
 		line(endX,endY,(endX-spark1),(endY-spark1));
 		line(endX,endY,(endX+spark2),(endY-spark2));
 	}
-	while (cloud <= 300){ //clouds
+	while (cloud <= 300){ //clouds!
     	grey = ((int)(Math.random()* 151));
     	fill(grey,grey,grey);
     	stroke(grey,grey,grey);
